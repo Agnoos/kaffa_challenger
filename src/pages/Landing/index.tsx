@@ -4,11 +4,15 @@ import './styles.css'
 function Landing() {
 
     return (
-        <div id="#Landing">
-            <div className="button-container">
-                <Link to="/ValidateCnpj" className="Button">1 - 2 </Link>
-                <Link to="/RetangleIntersection" className="Button">3 - 4</Link>
-            </div>
+        <div className="navbar">
+            <ul className="nav-itens">
+                <li className="nav-iten"><Link to="/ValidateCnpj" className="Button">CNPJs</Link></li>
+                <li className="nav-iten"><Link to="/RetangleIntersection" className="Button">Intersection</Link></li>
+                <li className="nav-iten"><Link to="/RestClientService" className="Button">RestClient</Link></li>
+                <li className="nav-iten"><Link to="/ValidateCnpj" className="Button">CNPJs</Link></li>
+                <li className="nav-iten"><Link to="/RetangleIntersection" className="Button">CNPJs</Link></li>
+                <li className="nav-iten"><Link to="/ValidateCnpj" className="Button">CNPJs</Link></li>
+            </ul>
         </div>
     )
 }

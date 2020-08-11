@@ -1,17 +1,38 @@
-.button a {
-    text-decoration: none;
-      background-color: var(--color-secundary-dark);
-      color: azure;
-      border-radius: 8px;
-      font-size: 20px;
-      padding: 0.8rem;
-}
-.button{
-    margin-left: 5px;
-}
-.button-container {
-    margin-top: 1rem;
+.navbar {
+    background-color: var(--color-secondary);
+    width: 100vw;
+    margin-bottom: 1rem;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    overflow-y: hidden;
+    overflow-y: hidden;
+    /* overflow-y: hidden;
+    overflow-x: scroll; */
+
+    padding: 20px;
 }
+
+ul{
+    list-style-type: none;
+    display: flex;
+    max-width: 90%;
+}
+
+li{
+    padding: 10px;
+}
+
+.nav-itens a{
+    color: var(--color-secondary);
+    text-decoration: none;
+    margin-right: 1rem;
+    font-size: 1.8rem;
+    background-color:var(--color-primary);
+    border-radius: 100px;
+    padding: 10px;
+}
+

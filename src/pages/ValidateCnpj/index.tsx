@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './styles.css'
 
 function ValidateCnpj() {
     const [cnpj, setCnpj] = useState('');
@@ -68,15 +69,19 @@ function ValidateCnpj() {
         }
     }
     return (
-        <div>
-            <label>Digite o cnpj para verificar se é valido:</label>
-            <input type="text" value={cnpj} onChange={(e) => setCnpj(e.target.value)} />
-            <button onClick={testCnpjReceitaFederal}>Testar Mascara</button>
-            <button onClick={testCnpjReceitaFederal}>Testar validação da Receita</button>
+        <div className="formCnpj">
+            <label className="cnpjLabel">Digite o cnpj para verificar se é valido:</label>
+            <input placeholder="60.852.916/0001-00" className="inputCnpj" type="text" value={cnpj} onChange={(e) => setCnpj(e.target.value)} />
             {/* Por um bug entre os componentes HTML e o Typescript, é necessário apertar o botão 2 vezes, a cada requisição, improvisei criando 2 botões que chama a mesma função. */}
-            <h1>{msg}</h1>
-            <hr />
-            <h1>{msgReceitaFederal}</h1>
+            <p className="p">É necessário 2 clicks em cada botão</p>
+            <div className="containerButton">
+                <button className="button mask" onClick={testCnpjReceitaFederal}>Testar Mascara</button>
+                <button className="button rf" onClick={testCnpjReceitaFederal}>Testar validação da Receita</button>
+            </div>
+            <div className="msg">
+                <h1 className="mensagem Mask">{msg}</h1>
+                <h1 className="mensagem RF">{msgReceitaFederal}</h1>
+            </div>
         </div>
     )
 }

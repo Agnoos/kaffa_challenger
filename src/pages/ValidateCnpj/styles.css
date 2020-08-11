@@ -1,0 +1,101 @@
+.formCnpj{
+    background-color: var(--color-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+
+
+}
+
+.cnpjLabel{
+    font-size: 2.5rem;
+    color: var(--color-primary);
+    text-decoration: none;
+    animation: glow 2s ease-in-out infinite alternate;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+.inputCnpj{
+    width: 40%;
+    max-width: 500px;
+    height: 40px;
+    text-align: center;
+}
+
+p.p{
+    margin-top: 5px;;
+    margin-bottom: 20px;
+    color: var(--color-primary);
+    text-decoration: none;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+.button{
+    width: 48%;
+    background-color: var(--color-primary);
+    border: 0;
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--color-secondary);
+}
+
+.containerButton{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.msg{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.mensagem{
+    width: 250px;
+    height: 70px;
+    text-align: center;
+    margin: 10px;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 5px;;
+}
+
+.Mask{
+    background-color: rgba(64, 80, 224, 0.397);
+    border: solid 1px blueviolet;
+    color: white;
+}
+.RF{
+    background-color: rgba(141, 224, 64, 0.308);
+    border: solid 1px rgb(226, 208, 43);
+    color: white;
+}
+
+
+
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 20px #DEB841;
+    }
+    to {
+        text-shadow: 0 0 30px #DEB841, 0 0 10px #DEB841;
+    }
+}
+
+
+
+@media(max-width: 700px){
+    .mensagem{
+        width: 100px;
+        height: 70px;
+        text-align: center;
+        margin: 10px;
+        border-radius: 20px;
+        padding: 7px;;
+        font-size: 1.1em;
+    }
+}

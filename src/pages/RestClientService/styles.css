@@ -1,0 +1,30 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-secondary);
+    flex-direction: column;
+}
+.container label{
+    font-size: 1em;;
+    color: var(--color-primary)
+}
+
+p{
+    font-size: 1.8em;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    color: var(--color-primary);
+    text-decoration: none;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 20px #DEB841;
+    }
+    to {
+        text-shadow: 0 0 30px #DEB841, 0 0 10px #DEB841;
+    }
+}
