@@ -18,29 +18,36 @@ function RetangleIntersection() {
 
 
         <div id="RetangleIntersection" >
-            <div className="header photo" >
-                <img src={photoRetangleMatriz} alt="" />
-            </div>
+            <div className="page">
+                <div className="header photo" >
+                    <img src={photoRetangleMatriz} alt="" />
+                </div>
 
-            <div className="result">
-                <RetangleIntersectionComponent r1={{ left: 7, top: 13, right: 7, bottom: 2 }} r2={{ left:3 , top: 11, right: 11, bottom: 5 }} />
-            </div>
+                <div className="infos">
 
-            <div className="form">
-                <p>Digite as dimensões de um novo retangulo, para verificar se tem interseção com um retangulo de valores left:   20,
-                top:    20,
-                right:  50,
+                    <div className="result">
+                        <RetangleIntersectionComponent r1={{ left: left, top: top, right: right, bottom: bottom }} r2={{ left: 3, top: 11, right: 11, bottom: 5 }} />
+                    </div>
+
+                    <div className="form">
+                        <p>Digite as dimensões de um novo retangulo, para verificar se tem interseção com um retangulo de valores left:   20,
+                        top:    20,
+                        right:  50,
                 bottom: 50 </p>
+                        <div className="align-itens">
+                            <label htmlFor="left">Left:</label>
+                            <input type="text" value={left} onChange={(e) => { setLeft(parseInt(e.target.value)) }} />
+                            <label htmlFor="right">Right:</label>
+                            <input type="text" value={right} onChange={(e) => { setRight(parseInt(e.target.value)) }} />
+                            <label htmlFor="top">Top:</label>
+                            <input type="text" value={top} onChange={(e) => { setTop(parseInt(e.target.value)) }} />
+                            <label htmlFor="bottom">Bottom:</label>
+                            <input type="text" value={bottom} onChange={(e) => { setBotton(parseInt(e.target.value)) }} />
+                            <button className="button" >Testar</button>
+                        </div>
+                    </div>
+                </div>
 
-                <label htmlFor="left">left:</label>
-                <input type="text" value={left} onChange={(e) => { setLeft(parseInt(e.target.value)) }} />
-                <label htmlFor="right">right:</label>
-                <input type="text" value={right} onChange={(e) => { setRight(parseInt(e.target.value)) }} />
-                <label htmlFor="top">top:</label>
-                <input type="text" value={top} onChange={(e) => { setTop(parseInt(e.target.value)) }} />
-                <label htmlFor="bottom">left:</label>
-                <input type="text" value={bottom} onChange={(e) => { setBotton(parseInt(e.target.value)) }} />
-                <button >Testar</button>
             </div>
         </div>
 

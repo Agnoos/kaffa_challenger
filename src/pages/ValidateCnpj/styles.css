@@ -40,6 +40,7 @@ p.p{
     padding: 10px;
     border-radius: 10px;
     color: var(--color-secondary);
+    cursor: pointer;
 }
 
 .containerButton{

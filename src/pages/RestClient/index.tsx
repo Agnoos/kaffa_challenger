@@ -1,7 +1,5 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './styles.css'
-import fetchData from '../../api/index'
-import { Console } from 'console'
 
 interface dados {
     currentDateTime: string;
@@ -17,7 +15,7 @@ const RestClient: React.FC<dados> = ({ currentDateTime, utcOffset, dayOfTheWeek,
             <div className="RestApi">
                 <p className="dado">{}</p>
                 <p className="dado"></p>
-                <button>Testando</button>
+                <button className="button">Testando</button>
             </div>
         )
     }

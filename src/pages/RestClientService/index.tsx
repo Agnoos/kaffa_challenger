@@ -6,9 +6,9 @@ function RestClientService() {
     let dados
 
     const [currentDateTime, setCurrentDateTime] = useState('-- --')
-    const [currentFileTime, setCurrentFileTime] = useState(0)
+    const [currentFileTime, setCurrentFileTime] = useState('-- --')
     const [dayOfTheWeek, setDayOfTheWeek] = useState('-- --')
-    const [utcOffset, setUtcOffset] = useState('-- --')
+    const [utcOffset, setUtcOffset] = useState(0)
 
     async function Search() {
         dados = await fetchData()
@@ -16,32 +16,33 @@ function RestClientService() {
         setCurrentDateTime(dados?.currentDateTime)
         setCurrentFileTime(dados?.currentFileTime)
         setDayOfTheWeek(dados?.dayOfTheWeek)
-        setUtcOffset(dados?.utcOffset)
+        setUtcOffset(parseInt(dados?.utcOffset)-3) // 3 horas atras (UTC-03) BRBRBR
 
-        var temp = new Date(currentDateTime)
-        console.log(temp)
-
+        // console.log(currentDateTime.valueOf())
 
 
-        console.log(dados)
-        console.log(dados?.currentDateTime)
-        console.log(dados?.currentDateTime)
-        console.log(dados?.currentDateTime)
-        console.log(dados?.currentDateTime)
-    }
-
+        let test = new Date
+            test.setTime(132416350557150950)
+            console.log(test)
+    //     console.log(dados)
+    //     console.log(dados?.currentDateTime)
+    //     console.log(dados?.currentDateTime)
+    //     console.log(dados?.currentDateTime)
+    //     console.log(dados?.currentDateTime)
+     }
     return (
         <div className="container">
-            <label htmlFor="">Data</label>
+            <h3 className="margin">Rest Server - World Clock/Client</h3>
+            <label htmlFor="">Data Completa</label>
             <p className="data" >{currentDateTime}</p>
-            <label>Horário atual</label>
+            <label>Horário Documento</label>
             <p className="data" >{currentFileTime}</p>
             <label htmlFor="Dia da Semana">Dia da semana</label>
             <p className="data" >{dayOfTheWeek}</p>
-            <label htmlFor="">UTC</label>
+            <label htmlFor="">Time Zone Name</label>
             <p className="data" >{utcOffset}</p>
 
-            <button onClick={() => {Search()}}>Atualizar Horários</button>
+            <button className="button" onClick={() => {Search()}}>Atualizar Horários</button>
         </div>
     )
 }

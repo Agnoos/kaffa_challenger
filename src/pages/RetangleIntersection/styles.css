@@ -1,0 +1,52 @@
+#RetangleIntersection{
+    display: flex;
+    align-items: center;
+
+    background-color: var(--color-secondary);
+}
+
+.page{
+    display: flex;
+    padding: 1em;
+}
+
+.form{
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: 30px;
+    margin-top: 2em;
+}
+.result{
+    background-color: thistle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10em;
+    margin-right: 10em;
+    border-radius: 10px;
+}
+.button{
+    width: 28%;
+    background-color: var(--color-primary);
+    border: 0;
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--color-secondary);
+}
+
+div .align-itens{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+div .align-itens label{
+    color: thistle;
+}
+
+input {
+    width: 50px;
+    text-align: center;
+    border: none;
+
+}

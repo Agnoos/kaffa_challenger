@@ -4,6 +4,8 @@ import ValidateCnpj from './pages/ValidateCnpj'
 import Landing from './pages/Landing'
 import RetangleIntersection from './pages/RetangleIntersection'
 import RestClientService from './pages/RestClientService'
+import Ux from './pages/Ux'
+import Mer from './pages/Mer'
 
 
 
@@ -14,6 +16,8 @@ function Routes() {
             <Route path="/ValidateCnpj" component={ValidateCnpj}/>
             <Route path="/RetangleIntersection" component={RetangleIntersection}/>
             <Route path="/RestClientService" component={RestClientService}/>
+            <Route path="/Mer" component={Mer}/>
+            <Route path="/Ux" component={Ux}/>
         </BrowserRouter>
     )
 }

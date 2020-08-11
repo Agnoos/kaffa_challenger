@@ -18,6 +18,22 @@ p{
     text-decoration: none;
     animation: glow 2s ease-in-out infinite alternate;
 }
+h3{
+    color: whitesmoke;
+}
+
+.margin{
+    margin: 5px;
+}
+button .button{
+    width: 48%;
+    background-color: var(--color-primary);
+    border: 0;
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--color-secondary);
+    cursor: pointer;
+}
 
 
 @keyframes glow {
