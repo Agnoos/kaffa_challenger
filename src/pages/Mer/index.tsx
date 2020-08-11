@@ -9,7 +9,8 @@ function Mer() {
             <div>
                 <img className="img" src={mer} alt="" />
             </div>
-            <a href="https://app.lucidchart.com/invitations/accept/31f382a8-25ce-4d26-8563-df5593b96e94" target="_blank"> Acessar Fluxo Online</a>
+            <a href="https://app.lucidchart.com/invitations/accept/31f382a8-25ce-4d26-8563-df5593b96e94" target="_blank">Acessar Fluxo Online</a>
+            <a href="https://github.com/Agnoos/kaffa_challenger/tree/master/src/docs" target="_blank">Baixar PDF do repositório</a>
         </div>
 
 

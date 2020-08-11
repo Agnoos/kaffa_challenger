@@ -35,7 +35,7 @@ const RetangleIntersectionComponent: React.FC<InputProps> = ({ r1, r2 }) => {
     return (
 
         <div>
-            {verifica ? <div>Não há interseção entre os retangulos na matriz</div> : <div> Há interseção entre os retangulos na matriz</div> }
+            {verifica ? <div>Não interseção entre os retangulos na matriz</div> : <div> Há interseção entre os retangulos na matriz</div> }
         </div>
 
     )
