@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './styles.css'
 import kaffa from '../../assets/imagens/kaffa.png'
-import github from '../../assets/imagens/github.png'
+
 function Landing() {
 
     return (
@@ -17,9 +17,7 @@ function Landing() {
                 <li className="nav-iten"><Link to="/Mer" className="Button">MER</Link></li>
                 <li className="nav-iten"><Link to="/Ux" className="Button">UX</Link></li>
             </ul>
-            <ul className="nav-itens logo-align">
-                <li><img className="logo" src={github} alt="" /></li>
-            </ul>
+
         </div>
     )
 }
