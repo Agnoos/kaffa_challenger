@@ -1,0 +1,17 @@
+.mer{
+    background-color: teal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mer a{
+    text-decoration: none;
+    color: var(--color-secondary);
+}
+.img{
+    width: auto;
+    height: 390px;
+    padding: 50px;
+}
