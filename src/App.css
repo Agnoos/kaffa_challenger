@@ -1,12 +1,12 @@
 :root {
   --color-background: #F0F0F7;
-  --color-primary-lighter: #9871F5;
-  --color-primary-light: #916BEA;
-  --color-primary: #8257E5;
-  --color-primary-dark: #774DD6;
-  --color-primary-darker: #6842C2;
-  --color-secundary: #04D361;
-  --color-secundary-dark: #04BF58;
+  --color-primary-lighter: #e9d9a8;
+  --color-primary-light: #eed075;
+  --color-primary: #DEB841;
+  --color-primary-dark: #deb741c9;
+  --color-primary-darker: #deb7417c;
+  --color-secundary: #6b6767;
+  --color-secundary-dark: #1C1C1C;
   --color-title-in-primary: #FFFFFF;
   --color-text-in-primary: #D4C2FF;
   --color-text-title: #32264D;
@@ -21,4 +21,49 @@
 
 }
 
+*{
+  margin: 50;
+  padding: 50;
+  box-sizing: border-box;
+}
 
+html, body, #root{
+  height: 100vh
+}
+
+body{
+background-color: var(--color-primary);
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+body,
+  input,
+  button,
+  textarea{
+      font : 500 1rem Poppins;
+  }
+
+
+.container{
+  width: 100vw;
+  max-width: 700px;
+  max-height: 100%vh;
+}
+a {
+  text-decoration: none;
+    background-color: var(--color-secundary-dark);
+    color: azure;
+    border-radius: 8px;
+    font-size: 20px;
+    padding: 0.8rem;
+}
+.App{
+  max-width: 100vw;
+  max-height: 100vh;
+}

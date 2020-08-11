@@ -1,6 +1,4 @@
-import React, { useState } from 'react'
-import { parse } from 'url';
-
+import React, { useState } from 'react';
 
 function ValidateCnpj() {
     const [cnpj, setCnpj] = useState('');
@@ -12,7 +10,7 @@ function ValidateCnpj() {
         const pureCnpj = cnpj.replace(/[^\d]+/g, '')
         setCnpjOnlyNumber(pureCnpj)
         const regex = /^\d{2}\.\d{3}\.\d{3}\/\d{4}\-\d{2}$/;
-        if (cnpj == '') {
+        if (cnpj === '') {
             setMsg('CNPJ VAZIO');
             return true;
         }
@@ -46,10 +44,9 @@ function ValidateCnpj() {
                     pos = 9;
             }
             let resultado = soma % 11 < 2 ? 0 : 11 - soma % 11;
-            if (resultado != parseInt(digitos.charAt(0))) {
-                return false;
+            if (resultado !== parseInt(digitos.charAt(0))) {
+                return false
             }
-
             tamanho = tamanho + 1;
             numeros = cnpjOnlyNumber.substring(0, tamanho);
             soma = 0;
@@ -60,7 +57,7 @@ function ValidateCnpj() {
                     pos = 9;
             }
             resultado = soma % 11 < 2 ? 0 : 11 - soma % 11;
-            if (resultado != parseInt(digitos.charAt(1))) {
+            if (resultado !== parseInt(digitos.charAt(1))) {
                 setMsgReceitaFederal('CPF NÃO É VALIDO PARA RECEITA FEDERAL')
                 return false;
             } else {
@@ -68,7 +65,6 @@ function ValidateCnpj() {
                 setMsgReceitaFederal('O CPF É VALIDO PARA RECEITA FEDERAL')
                 return true;
             }
-
         }
     }
     return (

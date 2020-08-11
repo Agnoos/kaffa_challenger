@@ -1,15 +1,16 @@
 import React from 'react'
 import { BrowserRouter, Route} from 'react-router-dom'
 import ValidateCnpj from './pages/ValidateCnpj'
-// import ValidateCnpjRF from './pages/CnpjValidator'
-// import Landing from './pages/Landing'
+import Landing from './pages/Landing'
+import RetangleIntersection from './pages/RetangleIntersection'
+
 
 function Routes() {
     return(
         <BrowserRouter>
-            {/* <Route path="/" exact component={Landing}/> */}
+            <Route path="/" exact component={Landing}></Route>
             <Route path="/ValidateCnpj" component={ValidateCnpj}/>
-            {/* <Route path="/give-ValidateCnpjRF" component={ValidateCnpjRF}/> */}
+            <Route path="/RetangleIntersection" component={RetangleIntersection}/>
         </BrowserRouter>
     )
 }
